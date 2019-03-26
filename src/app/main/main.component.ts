@@ -20,11 +20,6 @@ export class MainComponent implements OnInit {
   fetchUsers() {
     this.dataService.getAllUsers().subscribe(users => {
       this.usernames = users;
-      console.log(this.usernames);
-      // users.map(user => {
-      //   this.username = user.login;
-      //   console.log(this.username);
-      // });
     });
   }
 
