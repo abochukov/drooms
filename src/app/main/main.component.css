@@ -10,6 +10,10 @@
   padding: 10px;
 }
 
+.username img {
+  border-radius: 5px;
+}
+
 .username p {
   margin-top: 10px;
   color: #424242;
