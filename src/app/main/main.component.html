@@ -1,0 +1,7 @@
+<div class="container">
+  <div *ngFor="let username of usernames" class="username">
+    <img src = "{{ username.avatar_url }}" width="190">
+    <p> username:<span> {{ username.login }} </span></p>
+    <button class="btn btn-primary" (click)="showDetails(username.id)"> Read More</button>
+  </div>
+</div>

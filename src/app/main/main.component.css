@@ -1,0 +1,20 @@
+.username {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.username p {
+  margin-top: 10px;
+  color: #424242;
+}
+
+.username p span {
+  font-weight: bold;
+}

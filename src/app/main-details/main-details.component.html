@@ -1,0 +1,12 @@
+<div class="container">
+  <div *ngIf="user" class="user-details">
+    <img src="{{ user.avatar_url }}">
+    <ul>
+      <li>location: <span>{{ user.location }}</span></li>
+      <li>html_url: <span><a href ="{{ user.html_url }}" target="_blank">{{ user.html_url }}</a></span></li>
+      <li >company: <span>{{ user.company }}</span></li>
+      <li>name: <span>{{ user.name }}</span>
+    </ul>
+
+  </div>
+</div>
