@@ -2,10 +2,10 @@
   <div *ngIf="user" class="user-details">
     <img src="{{ user.avatar_url }}">
     <ul>
-      <li>location: <span>{{ user.location }}</span></li>
-      <li>html_url: <span><a href ="{{ user.html_url }}" target="_blank">{{ user.html_url }}</a></span></li>
-      <li >company: <span>{{ user.company }}</span></li>
-      <li>name: <span>{{ user.name }}</span>
+      <li>location: <span>{{ user.location ? user.location : 'N/A' }}</span></li>
+      <li>html_url: <span><a href ="{{ user.html_url }}" target="_blank">{{ user.html_url ? user.html_url : 'N/A' }}</a></span></li>
+      <li >company: <span>{{ user.company ? user.company : 'N/A' }}</span></li>
+      <li>name: <span>{{ user.name ? user.name : 'N/A'  }}</span>
     </ul>
 
   </div>
